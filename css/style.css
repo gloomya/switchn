@@ -1,4 +1,4 @@
-/* colors apple: blue #4da2f9, magenta #fa57c1, violet #876afb, sunset #f65f74 */
+/* colors apple: blue #4da2f9, magenta #fa57c1, violet #876afb, sunset #f65f74, gray #545454 */
 @import url('https://fonts.googleapis.com/css?family=ABeeZee|Nunito:300,400,700&display=swap');
 /* General */
 body {
@@ -47,4 +47,39 @@ nav {
 .hero h2 {
     font-size: 2.6em;
     letter-spacing: 2px;
+}
+/* Features ection */
+.features-pt2 {
+    background-color: #545454;
+    color: #ffffff;
+}
+/* Contact section */
+.contact {
+    background-color: #545454;
+    color: #ffffff;
+}
+.contact-form input, .contact-form textarea, 
+.contact-form input:active, .contact-form textarea:active 
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: #545454;
+    border: 2px solid #ffffff;
+}
+.contact-form input::placeholder, .contact-form input::-webkit-placeholder {
+    color: #ffffff !important;
+}
+.contact-form textarea::placeholder,
+.contact-form textarea::-webkit-placeholder {
+    color: #ffffff!important;
+}
+.contact-form textarea::-webkit-input-placeholder,
+.contact-form textarea:-moz-placeholder,
+.contact-form textarea::-moz-placeholder,
+.contact-form textarea:-ms-input-placeholder
+{
+    color: #ffffff!important;
+}
+/* Footer */
+footer {
+    background-color: #545454;
+    color: #ffffff;
 }
