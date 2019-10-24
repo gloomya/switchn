@@ -48,10 +48,20 @@ nav {
     font-size: 2.6em;
     letter-spacing: 2px;
 }
-/* Features ection */
+/* Features section */
 .features-pt2 {
     background-color: #545454;
     color: #ffffff;
+}
+/* Team section */
+.card-img {
+    cursor: pointer;
+}
+.social {
+    position: absolute;
+    background: rgba(255,255,255,0.7);
+    bottom: 100px;
+    left: 2.4em;
 }
 /* Contact section */
 .contact {
