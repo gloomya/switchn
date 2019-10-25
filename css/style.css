@@ -53,15 +53,138 @@ nav {
     background-color: #545454;
     color: #ffffff;
 }
-/* Team section */
-.card-img {
-    cursor: pointer;
+.feature-box {
+    padding: 2.2em 4em;
+    border: 1px solid #f5f5f5;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
 }
-.social {
+
+.feature-box .features-content h3 {
+    margin: 1.4em 0;
+}
+
+
+.feature-box:hover {
+    border-color: #f65f74;
+    box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+}
+/* Team section */
+.team-item {
+    margin: 15px 0;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+  }
+  
+.team-item .team-img {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.team-item .team-overlay {
+    height: 100%;
     position: absolute;
-    background: rgba(255,255,255,0.7);
-    bottom: 100px;
-    left: 2.4em;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    width: 100%;
+    border-radius: 0px;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.team-item .overlay-social-icon {
+    color: #fff;
+    top: 45%;
+    position: absolute;
+    display: table-cell;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.team-item .overlay-social-icon .social-icons {
+    padding-left: 0;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.team-item .overlay-social-icon .social-icons li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.team-item .overlay-social-icon .social-icons li a {
+    letter-spacing: 0px;
+    outline: 0 !important;
+    text-decoration: none!important;
+}
+
+.team-item .overlay-social-icon .social-icons li a i {
+    font-size: 20px;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    background: #4da2f9;
+    display: block;
+    border-radius: 36px;
+    line-height: 36px;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.team-item .overlay-social-icon .social-icons li a:hover .lni-facebook-filled {
+    background: #3B5998;
+}
+
+.team-item .overlay-social-icon .social-icons li a:hover .lni-linkedin-filled {
+    background: #0077b5;
+}
+
+.team-item .overlay-social-icon .social-icons li a:hover .lni-instagram-filled {
+    background: #fb3958;
+}
+
+.team-item .info-text {
+    padding: 15px 20px;
+}
+
+.team-item .info-text h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.team-item .info-text h3 a {
+    color: #333;
+}
+
+.team-item .info-text h3 a:hover {
+    color: #17C2D7;
+}
+
+.team-item .info-text p {
+    margin: 0;
+    color: #888;
+}
+
+.team-item:hover .team-overlay {
+    opacity: 1;
 }
 /* Contact section */
 .contact {
