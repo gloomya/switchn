@@ -55,7 +55,7 @@ nav {
 }
 .feature-box {
     padding: 2.2em 4em;
-    border: 1px solid #f5f5f5;
+    border: 1px solid #cccccc;
     margin-bottom: 30px;
     border-radius: 4px;
     text-align: center;
@@ -186,14 +186,78 @@ nav {
 .team-item:hover .team-overlay {
     opacity: 1;
 }
+/* Prices section */
+#prices {
+    text-align: center;
+}
+
+#prices .card{
+    border-color: #cccccc; 
+    padding-top: 4em;
+}
+#prices .card:hover{
+    border-color: #f65f74;
+    box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.15);
+}
+.pricing li{
+    list-style: none;
+    padding: 0.4em;
+}
+.pricing .plan-img img{
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background: rgba(0,0,0,0.01);
+    max-width: 100px;
+    max-height: 100px;
+    position: absolute;
+    top:-3em;
+    left: 37%;
+}
+.pricing .price{
+    margin-bottom: 30px;
+}
+.pricing .price small{ 
+    font-size: 15px;
+}
+.pricing .price h3 span{ 
+    font-size: 15px; 
+    vertical-align: top;
+}
+.pricing .price > span{ 
+    font-size: 18px; 
+    text-transform: uppercase;
+}
+  
 /* Contact section */
+.single-contact {
+    padding: 3px 55px;
+    position: relative;
+}
+  
+.single-contact p {
+    margin-left: 2em;
+    padding-top: 0.8em;
+}
+  
+.contact-icon {
+    color: #4da2f9;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 .contact {
     background-color: #545454;
     color: #ffffff;
 }
 .contact-form input, .contact-form textarea, 
 .contact-form input:active, .contact-form textarea:active 
-.contact-form input:focus, .contact-form textarea:focus {
+ {
     background-color: #545454;
     border: 2px solid #ffffff;
 }
@@ -215,4 +279,15 @@ nav {
 footer {
     background-color: #545454;
     color: #ffffff;
+}
+/* Responsive */
+@media (max-width:992px){
+    #prices .card {
+        padding-top: auto;
+    }
+    .pricing .plan-img img {
+        position: relative;
+        top:auto;
+        left: auto;
+    }
 }
