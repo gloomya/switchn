@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/LineIcons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>switch'n app – home page</title>
 </head>
 <body>
     <header class="sticky" id="site-header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light my-sm-1">
+            <nav class="navbar navbar-expand-lg navbar-light my-sm-1">
                 <a class="navbar-brand" href="index.html">switch'n</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,8 +43,15 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="#contact">Contact</a>
                             </li>
+                            <!-- <li class="nav-item mx-3">
+                                <span class="nav-link">Light/Dark</span>
+                            </li> -->
                         </ul>
-                        <button class="btn btn-primary ml-3 px-4 my-sm-1 signin" id="switcher">Sign In</button>
+                        <!-- <button class="btn btn-primary ml-3 px-4 my-sm-1 signin" id="switcher">Sign In</button> -->
+                        <label class="switch">
+                            <input type="checkbox" id="lv-btn">
+                            <span class="slider round"></span>
+                        </label>
                 </div>
             </nav>
         </div>
@@ -151,12 +165,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 wow bounceInRight" data-wow-delay="0.6s">
+                    <div class="col-md-6 feature-image wow bounceInRight" data-wow-delay="0.6s">
                         <img src="img/headphones.jpg" alt="iPhone and Headphones" width="86%">
                     </div>
                 </div>
                 <div class="row py-5">
-                    <div class="col-md-6 wow bounceInLeft" data-wow-delay="1.2s">
+                    <div class="col-md-6 feature-image wow bounceInLeft" data-wow-delay="1.2s">
                         <img src="img/headphones-2.jpg" alt="iPhone and Headphones" width="86%">
                     </div>
                     <div class="col-md-6 wow fadeInRight">
