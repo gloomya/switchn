@@ -53,6 +53,7 @@ body {
  {
     background-color: #2F3061;
     border: 2px solid #ffffff;
+    color: #ffffff !important;
 }
 .dark-version .contact-form input::placeholder, 
 .dark-version .contact-form input::-webkit-placeholder {
@@ -423,6 +424,7 @@ section {
  {
     background-color: #545454;
     border: 2px solid #ffffff;
+    color: #ffffff!important;
 }
 .contact-form input::placeholder, .contact-form input::-webkit-placeholder {
     color: #ffffff !important;
