@@ -41,7 +41,37 @@ $(document).ready(function() {
 		}else{
 			$('body').removeClass('dark-version');
 		}
-	});
+    });
+//Contact form
+$("#contactForm").submit(function(event){
+    // cancels the form submission
+    event.preventDefault();
+    submitForm();
+});
+
+function submitForm(){
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var email = $("#subject").val();
+    var message = $("#message").val();
+ 
+    $.ajax({
+        type: "POST",
+        url: "contact.php",
+        data: "name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            }
+        }
+    });
+}
+function formSuccess(){
+    $( "#contactForm" ).addClass( "hidden" );
+    $( "#msg" ).removeClass( "hidden" );
+    
+}
 
 // Particles 
 // var mousePos = {};

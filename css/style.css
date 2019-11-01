@@ -4,6 +4,10 @@
 body {
     font-family: 'Nunito', Arial, Helvetica, sans-serif!important;
 }
+.hidden {
+    display: none;
+    visibility: hidden;
+}
 /* Dark Version */
 .dark-version{
     background-color: #22252a!important;
