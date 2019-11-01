@@ -42,36 +42,7 @@ $(document).ready(function() {
 			$('body').removeClass('dark-version');
 		}
     });
-//Contact form
-$("#contactForm").submit(function(event){
-    // cancels the form submission
-    event.preventDefault();
-    submitForm();
-});
 
-function submitForm(){
-    // Initiate Variables With Form Content
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var email = $("#subject").val();
-    var message = $("#message").val();
- 
-    $.ajax({
-        type: "POST",
-        url: "contact.php",
-        data: "name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
-                formSuccess();
-            }
-        }
-    });
-}
-function formSuccess(){
-    $( "#contactForm" ).addClass( "hidden" );
-    $( "#msg" ).removeClass( "hidden" );
-    
-}
 
 // Particles 
 // var mousePos = {};
@@ -111,4 +82,43 @@ function formSuccess(){
 
 });
 
+//Contact form
+(function ($) {
+    'use strict';
 
+    var form = $('.contact-form'),
+        message = $('.contact-msg'),
+        form_data;
+
+    // Success function
+    function done_func(response) {
+        message.fadeIn().removeClass('alert-danger').addClass('alert-success');
+        message.text(response);
+        setTimeout(function () {
+            message.fadeOut();
+        }, 2000);
+        form.find('input:not([type="submit"]), textarea').val('');
+    }
+
+    // fail function
+    function fail_func(data) {
+        message.fadeIn().removeClass('alert-success').addClass('alert-success');
+        message.text(data.responseText);
+        setTimeout(function () {
+            message.fadeOut();
+        }, 2000);
+    }
+    
+    form.submit(function (e) {
+        e.preventDefault();
+        form_data = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: form.attr('action'),
+            data: form_data
+        })
+        .done(done_func)
+        .fail(fail_func);
+    });
+    
+})(jQuery);
