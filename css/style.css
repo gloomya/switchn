@@ -187,7 +187,7 @@ section {
 }
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9)),url('../img/hero-bg.jpg');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)),url('../img/hero-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
